@@ -2,7 +2,7 @@
   <div class="diviedtable">
     <table>
       <colgroup>
-        <col width="200" align="left" class="thead-col" />
+        <col width="130" align="left" class="thead-col" />
         <col width="100" />
         <col width="100" />
         <col width="100" />
@@ -14,7 +14,7 @@
             v-for="(item, index) in thead"
             :key="item.id"
             :class="{ 'text-l': index === 0 }"
-            class="text-c"
+            class="text-r"
           >
             {{ item.value }}
           </th>
@@ -120,18 +120,23 @@ export default {
 </script>
 
 <style lang="less">
-.text-l {
-  text-align: left;
+.text-r {
+  text-align: right;
 }
 .text-c {
   text-align: center;
 }
-.text-r {
-  text-align: right;
+.text-l {
+  text-align: left;
 }
 </style>
 
 <style lang="less" scoped>
+th,
+td {
+  height: 66px;
+  line-height: 66px;
+}
 .diviedtable {
   margin: 20px;
   background: #2e3036;
@@ -171,7 +176,19 @@ export default {
       .step-1 {
         th,
         td {
-          border-bottom: 4px solid #212228;
+          border-top: 4px solid #212228;
+        }
+        &:first-of-type {
+          th,
+          td {
+            border-top: none;
+          }
+        }
+        + .step-2{
+          th,
+          td {
+          border-top: 2px solid #292929;
+          }
         }
       }
       .step-2 {
