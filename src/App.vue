@@ -31,11 +31,12 @@ export default {
   margin-top: 60px;
   /* background: #212228; */
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
-ul,li{
+ul,
+li {
   list-style-type: none;
 }
 </style>

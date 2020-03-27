@@ -184,10 +184,10 @@ td {
             border-top: none;
           }
         }
-        + .step-2{
+        + .step-2 {
           th,
           td {
-          border-top: 2px solid #292929;
+            border-top: 2px solid #292929;
           }
         }
       }

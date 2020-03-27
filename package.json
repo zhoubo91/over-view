@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "cssnano": "^4.1.10",
+    "echarts": "^4.7.0",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "postcss-aspect-ratio-mini": "^1.0.1",
@@ -19,7 +20,8 @@
     "postcss-url": "^8.0.0",
     "postcss-viewport-units": "^0.1.6",
     "postcss-write-svg": "^3.0.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-echarts": "^5.0.0-beta.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
