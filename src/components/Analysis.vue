@@ -14,6 +14,7 @@
 <script>
 import ECharts from "vue-echarts";
 import "echarts/lib/chart/line";
+import "echarts/lib/chart/pie";
 import res from "./mock.js";
 export default {
   name: "Analysis",
