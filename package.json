@@ -32,6 +32,7 @@
         "@vue/eslint-config-prettier": "^6.0.0",
         "babel-eslint": "^10.0.3",
         "cssnano-preset-advanced": "^4.0.7",
+        "cz-conventional-changelog": "^3.1.0",
         "eslint": "^6.7.2",
         "eslint-plugin-prettier": "^3.1.1",
         "eslint-plugin-vue": "^6.1.2",
@@ -41,7 +42,12 @@
     },
     "husky": {
         "hooks": {
-            "commit-msg": "commitlint -e $GIT_PARAMS"
+            "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+        }
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
         }
     }
 }
