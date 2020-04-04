@@ -135,6 +135,7 @@ export default {
             height: 38px;
             line-height: 38px;
             margin: 32px 0;
+            font-size: 26px;
             .up {
               color: #f73563;
             }
