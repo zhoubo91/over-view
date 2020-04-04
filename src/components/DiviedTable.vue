@@ -144,6 +144,7 @@ td {
   table {
     padding: 24px;
     padding-top: 50px;
+    width: 100%;
     td {
       height: 66px;
       line-height: 66px;
